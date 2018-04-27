@@ -1,0 +1,36 @@
+<!--
+  Generated template for the FeedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-menu [content]="NAV">
+  <ion-content>
+    <ion-list>
+      <button ion-item> lorem ipsum 1</button>
+      <button ion-item> lorem ipsum 2</button>
+      <button ion-item> lorem ipsum 3</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>feed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content #NAV>
+  <ion-list>
+    <button ion-item class="margin-item" (click)="itemSelected(item)" *ngFor="let item of dataArray" >
+      <ion-thumbnail item-start>
+        <img src="{{url}}{{item.news_thumb}}">
+      </ion-thumbnail>
+      <h3 class="title"><b>{{item.news_title}}</b></h3>
+      <p class="item summary" >{{item.news_summary}}</p>
+    </button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,15 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cover Edition
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of data">
+      <img src="{{url}}{{slide.edition_image}}" class="slide-image" (click)="itemSelected(slide)">
+    </ion-slide>
+  </ion-slides>
+</ion-content>
