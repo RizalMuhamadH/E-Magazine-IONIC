@@ -11,13 +11,15 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NetworkProvider } from '../providers/network/network';
+import { ReadPage } from '../pages/read/read';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     FeedPage,
-    ContentPage
+    ContentPage,
+    ReadPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { NetworkProvider } from '../providers/network/network';
     MyApp,
     HomePage,
     FeedPage,
-    ContentPage
+    ContentPage,
+    ReadPage
   ],
   providers: [
     StatusBar,
