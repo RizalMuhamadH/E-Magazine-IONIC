@@ -1,0 +1,64 @@
+page-read {
+    body{
+        font-family:Roboto;
+        font-size:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+    } 
+    p{
+        text-align:justify;
+        color:black;
+    }
+    p.quotes{
+        font-weight:bold;
+        color:#115B80;
+    }
+    p.title{
+        font-weight:bold;
+        color:#115B80;
+        font-size:130%;
+        margin-bottom:12px;
+        text-align:left;
+    } 
+    .caption{
+        font-size:70%;
+        color:#939598;
+        text-align:justify;
+        margin-bottom:5px;}
+    div,embed,img{
+        width:100%;
+    }
+    
+    .bjb{
+        font-weight:bold;
+        color:#115B80;
+    }
+
+    .scrolling{
+        overflow: scroll;
+        padding-bottom: 50px;
+    }
+
+
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        font-style: bold;
+        font-weight: normal;
+        src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: normal;
+        src: url('../assets/fonts/Roboto-Italic.ttf') format('truetype');
+    }
+}
