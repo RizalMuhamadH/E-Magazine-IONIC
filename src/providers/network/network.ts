@@ -16,11 +16,12 @@ import 'rxjs/add/operator/do';
 @Injectable()
 export class NetworkProvider {
 
-  url;
+  url: string;
 
   constructor(public http: Http) {
-    console.log('Hello NetworkProvider Provider');
-    this.url = '';
+    this.url = 'http://rni.ayomedianetwork.com/';
+    console.log(this.url);
+    
   }
 
   getEdition(){
