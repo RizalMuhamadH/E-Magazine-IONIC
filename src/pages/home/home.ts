@@ -1,7 +1,7 @@
 import { Edition } from './../../app/models/edition';
 import { NetworkProvider } from './../../providers/network/network';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 import { FeedPage } from '../feed/feed';
 
 @Component({
@@ -28,11 +28,14 @@ export class HomePage {
       this.data = this.editionList.data;
       console.log(this.data);
 
+    },(error) =>{
+      console.log(error);
+      
     });
   }
 
   itemSelected(slide){
-    this.navCtrl.push(FeedPage, {
+    this.navCtrl.setRoot(FeedPage, {
       item: slide
     });
     
