@@ -1,4 +1,3 @@
-import { ContentPage } from './../pages/content/content';
 import { FeedPage } from './../pages/feed/feed';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -18,7 +17,6 @@ import { ReadPage } from '../pages/read/read';
     MyApp,
     HomePage,
     FeedPage,
-    ContentPage,
     ReadPage
   ],
   imports: [
@@ -31,7 +29,6 @@ import { ReadPage } from '../pages/read/read';
     MyApp,
     HomePage,
     FeedPage,
-    ContentPage,
     ReadPage
   ],
   providers: [
